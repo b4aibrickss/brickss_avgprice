@@ -9,6 +9,7 @@ Esta aplicação faz pesquisa de preços de produtos nos seguintes sites de e-co
 - Lojas Americanas 
 - Enjoei 
 - AliExpress 
+- eBay
 
 É uma extensão para Firefox que possui um campo de pesquisa de produto e um botão Pesquisar.
 

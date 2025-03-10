@@ -6,7 +6,8 @@ const platforms = [
   { name: "Magazine Luiza", url: "https://www.magazineluiza.com.br/busca/" },
   { name: "Lojas Americanas", url: "https://www.americanas.com.br/busca/" },
   { name: "Enjoei", url: "https://www.enjoei.com.br/search?q=" },
-  { name: "AliExpress", url: "https://www.aliexpress.com/wholesale?SearchText=" }
+  { name: "AliExpress", url: "https://www.aliexpress.com/wholesale?SearchText=" },
+  { name: "eBay", url: "https://www.ebay.com/sch/i.html?_nkw=" }  
 ];
 
 let allResults = [];

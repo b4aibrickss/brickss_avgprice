@@ -233,6 +233,35 @@ function scrapeAliExpress() {
     return results;
 }
 
+function scrapeEbay() {
+    let results = [];
+    const items = document.querySelectorAll('.s-item');
+    console.log("Number of items found:", items.length);
+    items.forEach(item => {
+        let titleElement = item.querySelector('.s-item__title');
+        let priceElement = item.querySelector('.s-item__price');
+        let linkElement = item.querySelector('.s-item__link');
+        let imageElement = item.querySelector('.s-item__image-img');
+
+        if (titleElement && priceElement && linkElement && imageElement) {
+            let title = titleElement.innerText;
+            let price = priceElement.innerText;
+            let link = linkElement.href;
+            let image = imageElement.src;
+            results.push({ title, price, link, image });
+        } else {
+            console.log("Missing element in item:", {
+                titleElement,
+                priceElement,
+                linkElement,
+                imageElement
+            });
+        }
+    });
+    console.log("eBay results:", results);
+    return results;
+}
+
 function sendResultsToBackground(results) {
     console.log("Sending results to background:", results);
     chrome.runtime.sendMessage({ action: "results", data: results });
@@ -257,6 +286,8 @@ setTimeout(() => {
         results = scrapeEnjoei();
     } else if (window.location.hostname.includes("aliexpress.com")) {
         results = scrapeAliExpress();
+    }else if (window.location.hostname.includes("ebay.com")) {
+        results = scrapeEbay();
     }
     sendResultsToBackground(results);
 }, 10000); // Aguardar 10 segundos
