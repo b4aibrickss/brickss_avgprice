@@ -1,12 +1,14 @@
-Esta aplicação faz pesquisa de preços de produtos nos seguintes sites de e-commerce:
-Mercado Livre
-OLX
-Shopee
-Amazon
-Magazine Luiza
-Lojas Americanas
-Enjoei
-AliExpress
+# BRICKSS AVG PRICE 
+
+Esta aplicação faz pesquisa de preços de produtos nos seguintes sites de e-commerce:  
+- Mercado Livre
+- OLX 
+- Shopee 
+- Amazon 
+- Magazine Luiza 
+- Lojas Americanas 
+- Enjoei 
+- AliExpress 
 
 É uma extensão para Firefox que possui um campo de pesquisa de produto e um botão Pesquisar.
 
@@ -20,8 +22,8 @@ Como podem vir resultados que não correspondem ao produto desejado, o usuário 
 
 Se uma plataforma falha na pesquisa, não impede a consulta das próximas. Apenas exibe uma mensagem na listagem dos resultados que não foi possível pesquisar os preços naquela plataforma.
 
-#Instalar a Extensão no Firefox: 
-Abra o Firefox e vá para about:debugging.
-Clique em "This Firefox".
-Clique em "Load Temporary Add-on".
-Selecione o arquivo manifest.json da extensão.
+### Instalar a Extensão no Firefox: 
+1. Abra o Firefox e vá para about:debugging. 
+2. Clique em "This Firefox". 
+3. Clique em "Load Temporary Add-on". 
+4. Selecione o arquivo manifest.json da extensão. 
